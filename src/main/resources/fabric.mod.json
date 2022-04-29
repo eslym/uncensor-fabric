@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "uncensor",
   "version": "${version}",
 
   "name": "Uncensor",
@@ -14,14 +14,14 @@
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/uncensor/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": []
   },
   "mixins": [
-    "modid.mixins.json"
+    "uncensor.mixins.json"
   ],
 
   "depends": {

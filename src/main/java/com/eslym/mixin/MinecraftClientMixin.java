@@ -9,7 +9,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 @Mixin(MinecraftClient.class)
 public class MinecraftClientMixin {
 	@Inject(at = @At("HEAD"), method = "shouldFilterText()Z", cancellable = true)
-	private void getTexts(CallbackInfoReturnable<Boolean> info) {
+	private void injectShouldFilterText(CallbackInfoReturnable<Boolean> info) {
 		info.setReturnValue(false);
 	}
 }
